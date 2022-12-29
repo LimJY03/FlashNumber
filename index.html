@@ -1,23 +1,25 @@
 <!DOCTYPE html>
-<head>
-    <title>Flash Number</title>
-    <link rel="stylesheet" href="./style.css" class="stylesheet">
-</head>
-<body>
-    <div id="content-wrapper">
-        <div id="content">0000</div>
-    </div>
-    <script>
-        const wrapperElem = document.getElementById('content-wrapper');
-        const numElem = document.getElementById('content');
-
-        // Random Generator
-        wrapperElem.addEventListener('click', () => {
-            var n = "";
-            for (let i = 0; i < 4; i++) {
-                n += Math.floor(Math.random() * 10).toString();                
-            }
-            numElem.innerHTML = n;
-        });
-    </script>
-</body>
+<html lang="en">
+    <head>
+        <title>Flash Number</title>
+        <link rel="stylesheet" href="./style.css" class="stylesheet">
+    </head>
+    <body>
+        <div id="content-wrapper">
+            <div id="content">0000</div>
+        </div>
+        <script>
+            const wrapperElem = document.getElementById('content-wrapper');
+            const numElem = document.getElementById('content');
+    
+            // Random Generator
+            wrapperElem.addEventListener('click', () => {
+                var n = "";
+                for (let i = 0; i < 4; i++) {
+                    n += Math.floor(Math.random() * 10).toString();                
+                }
+                numElem.innerHTML = n;
+            });
+        </script>
+    </body>
+</html>
