@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contentWrapper {
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-size: cover;
+    background-color: antiquewhite;
+}
+
+#contentWrapper > #content {
+    font-size: 5rem;
+    font-weight: bold;
+}
