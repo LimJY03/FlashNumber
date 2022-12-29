@@ -4,22 +4,20 @@
     <link rel="stylesheet" href="./style.css" class="stylesheet">
 </head>
 <body>
-    <div id="contentWrapper">
+    <div id="content-wrapper">
         <div id="content">####</div>
     </div>
     <script>
-        const wrapperElem = document.getElementById('contentWrapper');
+        const wrapperElem = document.getElementById('content-wrapper');
         const numElem = document.getElementById('content');
 
         // Random Generator
-        function generate(length) {
+        wrapperElem.addEventListener('click', () => {
             var n = "";
-            for (let i = 0; i < length; i++) {
+            for (let i = 0; i < 4; i++) {
                 n += Math.floor(Math.random() * 10).toString();                
             }
             numElem.innerHTML = n;
-        }
-
-        wrapperElem.addEventListener('click', generate(4));
+        });
     </script>
 </body>
