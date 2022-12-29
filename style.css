@@ -5,7 +5,7 @@
 }
 
 #content-wrapper {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: center;
     background-size: cover;
@@ -18,5 +18,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 15rem;
-    font-weight: bold;
+    font-weight: 500;
 }
