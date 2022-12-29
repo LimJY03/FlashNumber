@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Flash Number</title>
+    <link rel="stylesheet" href="./style.css" class="stylesheet">
 </head>
 <body>
     <div id="contentWrapper">
@@ -12,17 +13,13 @@
 
         // Random Generator
         function generate(length) {
-            var n = 0;
+            var n = "";
             for (let i = 0; i < length; i++) {
-                n = n * 10 + Math.floor(Math.random() * 10);                
+                n += Math.floor(Math.random() * 10).toString();                
             }
             numElem.innerHTML = n;
         }
 
-        // Wrapper Styling
-        wrapperElem.style.backgroundSize = "cover";
-        wrapperElem.style.height = "100vh";
-        wrapperElem.style.width= "100%";
         wrapperElem.addEventListener('click', generate(4));
     </script>
 </body>
