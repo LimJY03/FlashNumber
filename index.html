@@ -3,7 +3,7 @@
     <title>Flash Number</title>
 </head>
 <body>
-    <div id="contentWrapper" height="100vh" width="100%" text-align="center" background-size="cover">
+    <div id="contentWrapper">
         <div id="content">####</div>
     </div>
     <script>
@@ -19,6 +19,10 @@
             numElem.innerHTML = n;
         }
 
+        // Wrapper Styling
+        wrapperElem.style.backgroundSize = "cover";
+        wrapperElem.style.height = "100vh";
+        wrapperElem.style.width= "100%";
         wrapperElem.addEventListener('click', generate(4));
     </script>
 </body>
